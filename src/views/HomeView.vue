@@ -20,7 +20,7 @@ export default {
   methods: {
     async generate(text) {
       // Define your API key and endpoint
-      const apiKey = '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'
+      const apiKey = import.meta.env.VITE_APP_OPEN_AI_KEY //Set Your API Key here
       const endpoint = 'https://api.openai.com/v1/images/generations'
 
       // Define your request data
